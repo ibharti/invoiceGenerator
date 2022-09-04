@@ -1,0 +1,33 @@
+10% sales tax on all goods
+exempted categories:
+    1. books
+    2. food
+    3. medical
+if imported goods with no exemptions
+10% sales tax+ 5% import duty
+
+required fields:
+
+~navigation bar
+    new bill, previous bills, date and time (current)
+
+~Input bill page:
+    date and time (when new bill selected) / bill number
+    item name
+    category (exempted? 0% : imported ? 10+5 : 10% )
+    price
+    taxes
+    total
+    PrintB, ResetB
+
+
+~Output bill
+    printable format of input bill.
+
+~components:
+    navigation bar
+    input bill
+    output
+
+~hook:
+    categories with proce and taxes.

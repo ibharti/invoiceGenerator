@@ -1,11 +1,22 @@
-import './App.css';
-
+import React, { Components } from 'react';
+import InputBill from './Components/InputBill';
+import NavigationBar from './Components/NavigationBar';
 function App() {
   return (
-    <div className="App">
-      <p>Welcome to the Invoice app</p>
-    </div>
+    <>
+      <header className='billHead' id='billHead'>
+        <NavigationBar />
+      </header>
+
+      <section>
+        <InputBill />
+      </section>
+
+
+    </>
+
   );
+
 }
 
 export default App;
