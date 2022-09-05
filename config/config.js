@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-require('colors')
 
 //connect DB func
 const connectDB = async () => {
