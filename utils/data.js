@@ -3,13 +3,13 @@ const items = [
         name: 'Book',
         price: 12.49,
         category: 'exempted',
-        tax: price + 0
+        tax: 0
     },
     {
         name: 'CD',
         price: 14.99,
         category: 'base',
-        tax: (.10 * price)
+        tax: .10
     },
     {
         name: 'Chocolate Bar',
@@ -21,7 +21,7 @@ const items = [
         name: 'Imported Chocolates',
         price: 10.00,
         category: 'imported',
-        tax: (.05 * price)
+        tax: .05
     },
 
 ]

@@ -3,7 +3,6 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const dotenv = require('dotenv');
-require('colors');
 
 const connectDB = require('./config/config');
 //dotenv config
@@ -21,9 +20,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(morgan("dev"));
 
 //routes
-app.get("/", (req, res) => {
-    res.send("<h1>Backend</h1>");
-});
+app.use('/api/items', require('./routes/itemRoutes'));
 
 //port
 

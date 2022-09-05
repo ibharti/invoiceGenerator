@@ -19,7 +19,7 @@ const itemSchema = mongoose.Schema({
     }
 
 
-}, { timestamp: ture });
+}, { timestamp: true });
 
 const Items = mongoose.model("Items", itemSchema)
 
